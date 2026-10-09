@@ -1,0 +1,15 @@
+# LLM Router Production Configuration
+# This file provides fallback defaults. Resolution order (highest to lowest priority):
+# explicit constructor kwargs > environment variables > .env file > this file > field defaults.
+
+triage_model: "gpt-4o-mini"
+low_threshold: 4
+high_threshold: 8
+timeout: 30
+retry_attempts: 3
+max_prompt_length: 10000
+
+model_mapping:
+  low: "claude-haiku-4-5-20251001"
+  medium: "gpt-4o-mini"
+  high: "claude-sonnet-4-6"

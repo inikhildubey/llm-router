@@ -1,0 +1,30 @@
+[project]
+name = "intelligent-llm-router"
+version = "0.1.0"
+description = "A Jev-inspired routing system for calibrated LLM selection"
+dependencies = [
+    "litellm",
+    "python-dotenv",
+    "pydantic",
+    "pydantic-settings",
+    "pyyaml",
+    "fastapi",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+]
+authors = [
+    {name = "nikhil_d"}
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

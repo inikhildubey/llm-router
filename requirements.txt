@@ -1,0 +1,10 @@
+litellm
+python-dotenv
+pydantic
+pydantic-settings
+pyyaml
+fastapi
+uvicorn
+pytest
+pytest-asyncio
+httpx
