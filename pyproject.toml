@@ -2,6 +2,11 @@
 name = "intelligent-llm-router"
 version = "0.1.0"
 description = "A Jev-inspired routing system for calibrated LLM selection"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Nikhil Dubey"}
+]
 dependencies = [
     "litellm",
     "python-dotenv",
@@ -18,10 +23,6 @@ test = [
     "pytest-asyncio",
     "httpx",
 ]
-authors = [
-    {name = "nikhil_d"}
-]
-
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"

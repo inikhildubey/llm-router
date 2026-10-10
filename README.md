@@ -81,3 +81,7 @@ If an execution call ultimately fails after retries, `/route` responds with HTTP
 docker build -t llm-router .
 docker run --env-file .env -p 8000:8000 llm-router
 ```
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
